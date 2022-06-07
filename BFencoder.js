@@ -44,7 +44,7 @@ function BFdecoder(G){
         I--;
         break;
       case '.':
-        D+='%'+L[T].toString(16);
+        D+='%'+(256+L[T]).toString(16).subsrt(1,2);
     }
     L[T]=L[T]<0?L[T]+256:L[T]%256;
   }
